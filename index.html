@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wahlsoftware</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="content">
+    <h1>Wahlsoftware</h1>
+    <p>
+        Für die Wahlen zum Studierendenparlament der Universität Bonn wurde einiges an hilfreicher Open-Source-Software entwickelt.
+        Diese Softwareprojekte werden in der <a href="https://github.com/sp-wahl">SP-Wahl-GitHub-Organisation</a> verwaltet.
+    </p>
+    <hr>
+    <article>
+        <h2>VoteManager</h2>
+
+        <a href="https://github.com/sp-wahl/VoteManager">GitHub-Repository</a> ·
+        <a href="https://github.com/sp-wahl/VoteManager/releases">Releases</a>
+
+        <p>
+            Der VoteManager ist eine Auszählsoftware für eine personalisierte Verhältniswahl.
+            Es lassen sich Wahlurnen und Listen mit Kandidierenden anlegen.
+            Bei der Auszählung werden die Personen- und Listenstimmen erfasst.
+            Am Ende lassen sich Urnenergebnisse sowie das Gesamtergebnis exportieren.
+        </p>
+
+        <p>
+            Der VoteManager liest und exportiert seine Konfigurations- und Ergebnisdaten in einem xml-Format.
+            Zur Ausführung benötigt der VoteManager Java.
+        </p>
+
+        <img src="img/Screenshot_VoteManager.png"/>
+    </article>
+    <hr>
+    <article>
+        <h2>VoteManagerManager</h2>
+
+        <a href="https://github.com/sp-wahl/VoteManagerManager">GitHub-Repository</a>
+
+        <p>
+            Mit dem VoteManagerManager lassen sich die Ergebnisse mehrerer VoteManager-Instanzen innerhalb eines Netzwerks zusammenführen und vergleichen.
+        </p>
+        <p>
+            Von jeder laufenden VoteManager-Instanz lässt sich auf Port 4567 der aktuelle Zustand abfragen.
+            Die Auszählrechner werden in zwei Gruppen aufgeteilt (yellow, pink), die jeweils das Ergebnis jeder Urne einmal eintragen (aber nur einmal pro Gruppe!).
+        </p>
+        <p>
+            Der VoteManagerManager fragt die Rechner beider Gruppen ab, fasst die Einzelergebnisse beider Gruppen zu Gruppenergebnissen zusammen, und vergleicht dann die beiden Gruppenergebnisse.
+            Abweichungen werden gemeldet und können dann untersucht werden.
+        </p>
+
+        <p>Der VoteManagerManager ist eine simple Webseite aus HTML+JavaScript, die man auf einem Laptop lokal aufrufen und benutzen kann.</p>
+
+        <img src="img/Screenshot_VoteManagerManager.png"/>
+    </article>
+    <hr>
+    <article>
+        <h2>wahlstand</h2>
+
+        <a href="https://github.com/sp-wahl/wahlstand">GitHub-Repository</a>
+
+        <p>
+            Der wahlstand dient zur Bekanntgabe vorläufiger Auszählergebnisse im Internet.
+        </p>
+
+        <p>
+            Ergebnisse für einzelne Urnen werden händisch in einem Online-Backend eingetragen.
+            Alternativ lässt sich dort auch eine vom VoteManager exportierte Konfigurationsdatei direkt einlesen.
+        </p>
+
+        <p>
+            Der wahlstand ist eine PHP-Anwendung, die auf einem simplen Webserver betrieben wird.
+        </p>
+
+        <img src="img/Screenshot_wahlstand.png"/>
+    </article>
+    <hr>
+    <footer>
+        <a href="https://wahlen.uni-bonn.de">Webseite des Wahlausschusses</a>
+    </footer>
+</div>
+</body>
+</html>

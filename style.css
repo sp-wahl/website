@@ -1,0 +1,48 @@
+/* vollkorn-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('./fonts/vollkorn-v12-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/vollkorn-v12-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* vollkorn-900 - latin-ext_latin */
+@font-face {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+    url('./fonts/vollkorn-v12-latin-ext_latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/vollkorn-v12-latin-ext_latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    font-family: "Vollkorn", serif;
+    background-color: #ac9c5c;
+    color: #28170b;
+}
+
+img {
+    max-width: 100%;
+    padding: 1rem 0;
+}
+
+a {
+    color: #502e16;
+}
+
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #28170b;
+}
+
+#content {
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+footer {
+    font-size: 95%;
+    text-align: center;
+}
